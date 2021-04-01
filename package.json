@@ -1,6 +1,6 @@
 {
   "name": "@toolz/material-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI components",
   "keywords": [
     "Material UI",
@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@toolz/material-ui)/\" --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -57,7 +58,9 @@
     "access": "public"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
     "@babel/plugin-transform-modules-commonjs": "^7.12.13",
+    "@babel/preset-react": "^7.13.13",
     "babel-jest": "^26.6.3",
     "jest-matcher-one-of": "^1.0.2"
   }
