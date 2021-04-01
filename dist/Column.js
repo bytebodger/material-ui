@@ -15,6 +15,7 @@ function _extends() {
 
 import * as PropTypes from 'prop-types';
 import { Grid } from '@material-ui/core';
+import React from 'react';
 
 export const Column = props => {
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(Grid, _extends({

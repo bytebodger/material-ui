@@ -1,6 +1,6 @@
 {
   "name": "@toolz/material-ui",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI components",
   "keywords": [
     "Material UI",
@@ -33,7 +33,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@toolz/material-ui)/\" --env=jsdom",
     "eject": "react-scripts eject",
-    "publish:npm": "rmdir dist && mkdir dist &&  babel src -d dist --copy-files"
+    "transpile": "rmdir /Q /S dist && mkdir dist &&  babel src -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
