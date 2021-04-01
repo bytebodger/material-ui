@@ -25,13 +25,11 @@ export const SomeComponent = () => {
 
 In the example above, there is one _row_, that contains a _column_, that spans the entire _row_. Inside that _column_, there's another _row_. The inner _row_ contains two _columns_, each spanning half the length of the _row_. Despite this, the code contains no references to "rows" or "columns".  _Every_ component is a "Grid". The _rows_ are grids - with the `container` attribute set to `true`. The _columns_ are grids - with the `item` attribute set to `true`.
 
-This is very counterintuitive for anyone who's accustomed to dealing with "traditional" responsive design systems. It's difficult to mentally parse the successive layers of nested `<Grid>`s. It's also difficult to quickly peruse the code and determien which `<Grid>`s represent _rows_, and which ones represent _columns_. It just looks like a big pile of `<Grid>` components (which... it _is_).
+This is very counterintuitive for anyone who's accustomed to dealing with "traditional" responsive design systems. It's difficult to mentally parse the successive layers of nested `<Grid>`s. It's also difficult to quickly peruse the code and determine which `<Grid>`s represent _rows_, and which ones represent _columns_. It just looks like a big pile of `<Grid>` components (which... it _is_).
 
 This package provides two simple wrapper components that will transform the above code as such:
 
 ```jsx
-import { Column } from './Column';
-
 export const SomeComponent = () => {
    return <>
       <Row>
@@ -55,7 +53,8 @@ export const SomeComponent = () => {
 After installation, import the components:
 
 ```jsx
-import { Column, Row } from '@toolz/material-ui';
+import { Row } from '@toolz/material-ui/dist/Row';
+import { Column } from '@toolz/material-ui/dist/Column';
 ```
 
 ## Components
