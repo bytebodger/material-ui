@@ -134,51 +134,6 @@ A `<Column>` is a wrapper component that denotes a responsive column of content,
 
 ```javascript
 const props = {
-   alignContent: {
-      optional,
-      format: oneOf[
-         'center',
-            'flex-end',
-            'flex-start',
-            'space-around',
-            'space-between',
-            'stretch',
-         ],
-      defaultValue: 'stretch',
-   },
-   alignItems: {
-      optional,
-      format: oneOf[
-         'baseline',
-            'center',
-            'flex-end',
-            'flex-start',
-            'stretch',
-         ],
-      defaultValue: 'stretch',
-   },
-   direction: {
-      optional,
-      format: oneOf[
-         'column',
-            'column-reverse',
-            'row',
-            'row-reverse',
-         ],
-      defaultValue: 'row',
-   },
-   justify: {
-      optional,
-      format: oneOf[
-         'center',
-            'flex-end',
-            'flex-start',
-            'space-around',
-            'space-between',
-            'space-evenly',
-         ],
-      defaultValue: 'flex-start',
-   },
    lg: {
       optional,
       format: oneOf[false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
@@ -193,15 +148,6 @@ const props = {
       optional,
       format: oneOf[false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
       defaultValue: false,
-   },
-   wrap: {
-      optional,
-      format: oneOf[
-         'nowrap',
-            'wrap',
-            'wrap-reverse',
-         ],
-      defaultValue: 'wrap',
    },
    xl: {
       optional,
