@@ -1,6 +1,6 @@
 {
   "name": "@toolz/material-ui",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI components",
   "keywords": [
     "Material UI",
@@ -17,7 +17,7 @@
     "email": "me@adamdavis.codes",
     "url": "https://github.com/bytebodger/material-ui/issues"
   },
-  "main": "dist/",
+  "main": "src/exports.js",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@testing-library/jest-dom": "^5.11.9",
