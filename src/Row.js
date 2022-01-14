@@ -3,14 +3,14 @@ import { Grid } from '@material-ui/core';
 import React from 'react';
 
 export const Row = props => {
-   return <>
+   return [
       <Grid
          container={true}
          {...props}
       >
          {props.children}
       </Grid>
-   </>;
+   ];
 };
 
 Row.propTypes = {
