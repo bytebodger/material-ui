@@ -1,6 +1,6 @@
 {
   "name": "@toolz/material-ui",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI components",
   "keywords": [
     "Material UI",
