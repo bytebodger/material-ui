@@ -3,7 +3,7 @@ import { Grid } from '@material-ui/core';
 import React from 'react';
 
 export const Column = props => {
-   return <>
+   return <React.Fragment>
       <Grid
          item={true}
          {...props}
