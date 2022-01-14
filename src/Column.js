@@ -3,14 +3,14 @@ import { Grid } from '@material-ui/core';
 import React from 'react';
 
 export const Column = props => {
-   return <React.Fragment>
+   return [
       <Grid
          item={true}
          {...props}
       >
          {props.children}
       </Grid>
-   </React.Fragment>;
+   ];
 };
 
 const columnOptions = [false, 'auto', true, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
