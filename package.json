@@ -1,6 +1,6 @@
 {
   "name": "@toolz/material-ui",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI components",
   "files": [
     "dist"
@@ -15,7 +15,7 @@
     "grid",
     "layout"
   ],
-  "homepage": "https://github.com/bytebodger/material-ui/dist",
+  "homepage": "https://github.com/bytebodger/material-ui",
   "bugs": {
     "email": "me@adamdavis.codes",
     "url": "https://github.com/bytebodger/material-ui/issues"
