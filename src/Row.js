@@ -1,6 +1,6 @@
 import * as PropTypes from 'prop-types';
-import { Grid } from '@material-ui/core';
 import React from 'react';
+import { Grid } from '@mui/material';
 
 export const Row = props => {
    return <>
