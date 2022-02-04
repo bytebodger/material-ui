@@ -35,7 +35,7 @@ Row.propTypes = {
       'row',
       'row-reverse',
    ]),
-   justify: PropTypes.oneOf([
+   justifyContent: PropTypes.oneOf([
       'center',
       'flex-end',
       'flex-start',
@@ -54,7 +54,7 @@ Row.defaultProps = {
    alignContent: 'stretch',
    alignItems: 'stretch',
    direction: 'row',
-   justify: 'flex-start',
+   justifyContent: 'flex-start',
    spacing: 0,
    wrap: 'wrap',
 };
