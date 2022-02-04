@@ -1,10 +1,7 @@
 {
   "name": "@toolz/material-ui",
-  "version": "2.0.1",
+  "version": "2.0.3",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI Grid components",
-  "files": [
-    "dist"
-  ],
   "keywords": [
     "Material UI",
     "React",
