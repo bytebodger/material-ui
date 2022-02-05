@@ -1,10 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { App } from './App';
+import { Row } from './lib/components/Row';
+import { Column } from './lib/components/Column';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export { Row, Column };

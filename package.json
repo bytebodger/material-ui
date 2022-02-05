@@ -1,9 +1,9 @@
 {
   "name": "@toolz/material-ui",
-  "version": "2.0.8",
+  "version": "2.0.10",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI Grid components",
   "files": [
-    "build"
+    "dist"
   ],
   "keywords": [
     "Material UI",
@@ -21,6 +21,7 @@
     "url": "https://github.com/bytebodger/material-ui/issues"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.12.1",
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.3.1",
@@ -37,7 +38,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "del-cli --force dist && set NODE_ENV=production && babel src/lib --out-dir dist --copy-files",
+    "build_orig": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:dist": "react-build-dist"
@@ -69,5 +71,11 @@
   "private": false,
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "del-cli": "^4.0.1"
   }
 }
