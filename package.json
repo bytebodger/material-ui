@@ -1,9 +1,9 @@
 {
   "name": "@toolz/material-ui",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "A few simple (borderline-silly, they're so simple) wrapper components for Material UI Grid components",
   "files": [
-    "dist"
+    "build"
   ],
   "keywords": [
     "Material UI",
@@ -26,22 +26,21 @@
     "@mui/icons-material": "^5.3.1",
     "@mui/material": "^5.4.0",
     "@mui/styled-engine-sc": "^5.3.0",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^11.2.5",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
+    "react-build-dist": "0.0.8",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@toolz/material-ui)/\" --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "transpile": "rmdir /Q /S dist && mkdir dist &&  babel src -d dist --copy-files"
+    "build:dist": "react-build-dist"
   },
   "eslintConfig": {
     "extends": [
@@ -49,12 +48,18 @@
       "react-app/jest"
     ]
   },
-  "browserslist": [
-    "last 1 chrome version",
-    "last 1 firefox version",
-    "last 1 safari version",
-    "last 1 ie version"
-  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bytebodger/material-ui.git"
@@ -64,12 +69,5 @@
   "private": false,
   "publishConfig": {
     "access": "public"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
-    "@babel/preset-react": "^7.13.13",
-    "babel-jest": "^26.6.3",
-    "jest-matcher-one-of": "^1.0.2"
   }
 }
